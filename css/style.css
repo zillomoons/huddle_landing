@@ -3,8 +3,19 @@
           box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body {
+  background-color: #674bb1;
+  background-image: url("/images/bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

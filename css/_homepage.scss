@@ -1,0 +1,14 @@
+body {
+    background-color: $purple;
+    background-image: url('/images/bg-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+    font-family: $font-body;
+    font-weight: 400;
+}
+h2 {
+    font-family: $font-title;
+    font-weight: 600;
+}
