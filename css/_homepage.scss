@@ -7,8 +7,24 @@ body {
     color: #ffffff;
     font-family: $font-body;
     font-weight: 400;
+    padding-top: 60px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    @media (min-width: 640px) {
+        background-image: url('/images/bg-desktop.svg') 
+        
+    }
 }
+
 h2 {
     font-family: $font-title;
     font-weight: 600;
+}
+.heroImage { 
+    padding-top: 30px;
+}
+
+.heroText {
+    padding-top: 30px;
 }

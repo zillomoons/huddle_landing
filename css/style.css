@@ -12,10 +12,27 @@ body {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  padding-top: 60px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url("/images/bg-desktop.svg");
+  }
 }
 
 h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+.heroImage {
+  padding-top: 30px;
+}
+
+.heroText {
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
