@@ -24,6 +24,10 @@ body {
   font-size: 16px;
 }
 
+a, a:visited {
+  text-decoration: none;
+}
+
 body {
   padding: 70px 40px 70px 40px;
   background-color: #674bb1;
@@ -68,5 +72,31 @@ h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
+}
+
+a.cta {
+  padding: 16px 66px 20px 66px;
+  margin-top: 26px;
+  display: inline-block;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #674bb1;
+  line-height: 1;
+  -webkit-box-shadow: 5px 5px 10px #3d2d69;
+          box-shadow: 5px 5px 10px #3d2d69;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  a.cta {
+    padding: 20px 66px 20px 66px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
