@@ -3,36 +3,54 @@
           box-sizing: border-box;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  padding: 70px 40px 70px 40px;
   background-color: #674bb1;
   background-image: url("/images/bg-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  padding-top: 60px;
-  padding-right: 80px;
-  padding-left: 80px;
 }
 
 @media (min-width: 640px) {
   body {
+    padding: 60px 80px 40px 80px;
     background-image: url("/images/bg-desktop.svg");
   }
 }
 
-h2 {
+@media (min-width: 1024px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+.heroImage img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .heroText {
+    padding-left: 60px;
+  }
+}
+
+.heroText p {
+  line-height: 1.75;
+}
+
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-}
-
-.heroImage {
-  padding-top: 30px;
-}
-
-.heroText {
-  padding-top: 30px;
+  font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */
