@@ -1,6 +1,13 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+
+header {
+    margin-bottom: 70px;
+    @media (min-width:1024px) {
+        margin-bottom: 100px;
+    }
+}
 body, html {
     margin: 0;
     padding: 0;
