@@ -3,16 +3,6 @@
           box-sizing: border-box;
 }
 
-header {
-  margin-bottom: 70px;
-}
-
-@media (min-width: 1024px) {
-  header {
-    margin-bottom: 100px;
-  }
-}
-
 body, html {
   margin: 0;
   padding: 0;
@@ -24,8 +14,26 @@ body {
   font-size: 16px;
 }
 
+header {
+  margin-bottom: 70px;
+}
+
+@media (min-width: 1024px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+
 a, a:visited {
   text-decoration: none;
+}
+
+footer {
+  text-align: right;
+}
+
+footer i.fab {
+  border: 1px solid #ffffff;
 }
 
 body {
@@ -58,9 +66,14 @@ body {
   width: 100%;
 }
 
+.heroText {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .heroText {
     padding-left: 60px;
+    text-align: left;
   }
 }
 
@@ -75,10 +88,10 @@ h1 {
 }
 
 a.cta {
-  padding: 16px 66px 20px 66px;
-  margin-top: 26px;
   display: inline-block;
   min-width: 200px;
+  margin-top: 26px;
+  padding: 16px;
   text-align: center;
   border-radius: 40px;
   background-color: #ffffff;
@@ -96,7 +109,12 @@ a.cta {
 
 @media (min-width: 1024px) {
   a.cta {
-    padding: 20px 66px 20px 66px;
+    padding: 20px 66px;
   }
+}
+
+a.cta:hover {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
 }
 /*# sourceMappingURL=style.css.map */

@@ -31,9 +31,15 @@ main {
 }
 
 .heroText {
+
+    text-align: center;
+
      @media (min-width: 1024px) {
         padding-left: 60px;
+        text-align: left;
     }
+
+
     p {
         line-height: 1.75;
     }
@@ -43,11 +49,11 @@ h1 {
     font-weight: 600;
     font-size: 32px;
 }
-a.cta {
-    padding: 16px 66px 20px 66px;
-    margin-top: 26px;
+a.cta { 
     display: inline-block;
     min-width: 200px;
+    margin-top: 26px;
+    padding: 16px;
     text-align: center;
     border-radius: 40px;
     background-color: #ffffff;
@@ -56,8 +62,16 @@ a.cta {
     box-shadow: 5px 5px 10px darken($purple, 20%);
     transform: translateX(0px);
     transition: transform 100ms ease-in-out;
-
+    
     @media (min-width: 1024px) {
-        padding: 20px 66px 20px 66px;
+        padding: 20px 66px;
     }
+    
+    &:hover {
+        
+        transform: translateX(3px);
+
+    }
+
+
 }
