@@ -24,12 +24,12 @@ header {
   }
 }
 
-header > img {
+header img {
   width: 120px;
 }
 
 @media (min-width: 1024px) {
-  header > img {
+  header img {
     width: 200px;
   }
 }
@@ -56,6 +56,25 @@ footer {
   }
 }
 
+footer > a {
+  margin-right: 16px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+
+footer > a:last-child {
+  margin-right: 0px;
+}
+
+footer > a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 footer i.fab {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,13 +87,9 @@ footer i.fab {
           align-items: center;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  color: #ffffff;
   width: 48px;
   height: 48px;
-  margin-right: 16px;
-}
-
-footer i.fab:last-child {
-  margin-right: 0px;
 }
 
 body {
@@ -147,9 +162,9 @@ h1 {
 
 a.cta {
   display: inline-block;
-  min-width: 200px;
+  min-width: 250px;
   margin-top: 26px;
-  padding: 16px;
+  padding: 20px;
   text-align: center;
   border-radius: 40px;
   background-color: #ffffff;
@@ -168,6 +183,7 @@ a.cta {
 @media (min-width: 1024px) {
   a.cta {
     padding: 20px 66px;
+    min-width: 200px;
   }
 }
 
