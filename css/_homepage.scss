@@ -1,5 +1,5 @@
 body {
-    padding: 70px 40px 70px 40px;
+    padding: 40px;
     background-color: $purple;
     background-image: url('/images/bg-mobile.svg');
     background-size: cover;
@@ -9,22 +9,24 @@ body {
     
 
     @media (min-width: 640px) {
-        padding: 60px 80px 40px 80px;
+        padding: 68px 80px 40px 80px;
         background-image: url('/images/bg-desktop.svg') 
         
     }
 }
 
 main {
+    margin-bottom: 60px;
+
     @media (min-width: 1024px) {
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, 1fr));
+        margin-bottom: 16px;
     }
 }
 
 .heroImage { 
-    @media (min-width: 1024px) {
-    }
+    margin-bottom: 60px;
     img {
         width: 100%;
     }
@@ -47,7 +49,12 @@ main {
 h1 {
     font-family: $font-title;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1.5;
+    @media (min-width: 1024px) {
+        font-size: 32px;
+        line-height: 1.5;
+    }
 }
 a.cta { 
     display: inline-block;
